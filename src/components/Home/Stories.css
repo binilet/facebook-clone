@@ -1,0 +1,110 @@
+.stories-container {
+  box-sizing: border-box;
+  background-color: inherit;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.story-wrapper {
+  padding-top: 8px;
+  padding-bottom: 24px;
+  display: flex;
+}
+.story {
+  width: 107px;
+  height: 190px;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #000;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.story .story-img {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transform: scale(1);
+  transition: 0.8s ease-in-out;
+  opacity: 0.8;
+  object-fit: cover;
+}
+.story .story-img:hover {
+  transform: scale(1.07);
+  overflow: hidden;
+  opacity: 0.8;
+}
+.story-owner-name {
+  position: absolute;
+  color: white;
+  bottom: 5px;
+  left: 10px;
+  font-size: 0.8125rem;
+  margin-right: 12px;
+  word-wrap: break-word;
+  font-weight: 600;
+  line-height: 1.2308;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.add-story .story-owner-name {
+  left: 19px;
+  color: #000;
+  font-family: xxx;
+}
+.add-story .story-img {
+  height: 140px;
+  width: 100%;
+  opacity: 1;
+  border-radius: 0px;
+}
+.add-story .story-owner-profile {
+  top: 118px;
+  left: 30px;
+  border: 5px solid white;
+  background-color: rgb(24, 118, 242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+.add-story button {
+  color: white;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  font-size: 1.25rem;
+  fill: white;
+  display: flex;
+}
+.add-story button:hover {
+  cursor: pointer;
+}
+.add-story {
+  background-color: #fff;
+}
+.story-owner-profile {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 10px;
+  top: 12px;
+  border: 2px solid #1876f2;
+  border-radius: 50%;
+}
+.profile-img-container img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:720px)
+{
+  .stories-container{
+    overflow-x:auto;
+    margin:auto;
+  }
+}

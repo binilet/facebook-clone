@@ -1,0 +1,183 @@
+.sign-up-container {
+  /* display: flex;this is for testing rmv comment to use independantly */
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(0, 0, 0, 0.1); */
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none; /*dont show modal until request*/
+}
+
+.sign-up-form-wrapper {
+  width: 432px;
+  min-width: 432px;
+  max-width: 432px;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.sign-up-header-wrapper,
+.sign-up-close {
+  padding: 8px;
+}
+.sign-up-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 0.1px solid #ccc;
+}
+.sign-up-modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #1c1e21;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+}
+.sign-up-modal-tagline {
+  font-size: 15px;
+  color: #606670;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  line-height: 24px;
+}
+.sign-up-close {
+  font-size: 1.3rem;
+  color: #606670;
+  cursor: pointer;
+}
+.sign-up-close:hover {
+  opacity: 0.5;
+}
+.sign-up-form-detail {
+  padding: 0px 8px;
+}
+
+.sign-up-field {
+  outline: none;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  line-height: 1rem;
+  padding: 12px;
+  color: 1cce21;
+  background: #f5f6f7;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.f_name {
+  margin-right: 8px;
+}
+.name-fields {
+  display: flex;
+  padding: 12px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup-mail-password-field input {
+  margin-bottom: 12px;
+}
+
+.sign-up-container input:focus {
+  outline: 1px solid #acc3e0;
+}
+
+.signup-misc {
+  display: flex;
+  flex-direction: column;
+}
+
+.bday-fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bday-fields select {
+  padding: 0 8px;
+  padding-right: 20px;
+  height: 32px;
+  border: 1px solid #ccd0d5;
+  color: #1c1e21;
+  line-height: 20px;
+  border-radius: 4px;
+  flex-grow: 1;
+  outline: none;
+}
+.sup-select {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 12px;
+}
+.gender-fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+.sup_radio {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  padding-right: 20px;
+  display: flex;
+  flex-grow: 1;
+  margin-right: 12px;
+  height: 24px;
+  line-height: 20px;
+  align-items: center;
+  justify-content: space-between;
+  color: #1c1e21;
+  font-size: 15px;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+}
+
+.signup-bday-txt,
+.signup-gender-txt {
+  font-size: 12px;
+  color: #606670;
+  line-height: 20px;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  margin-top: 2px;
+}
+.sup_terms_and_conditions {
+  font-size: 11px;
+  color: #777;
+  margin-bottom: 12px;
+}
+.sup_terms_and_conditions a {
+  color: #385898;
+  text-decoration: none;
+}
+.sup_terms_and_conditions a:hover {
+  text-decoration: underline;
+}
+.sup_signup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.sup_signup-btn button {
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0px 32px;
+  border-radius: 4px;
+  background-color: #00a400;
+  height: 36px;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif !important;
+  font-weight: bold;
+}
+.sup_signup-btn button:hover {
+  opacity: 0.8;
+}

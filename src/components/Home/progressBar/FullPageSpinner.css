@@ -1,0 +1,80 @@
+.cont{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:10vh;
+    position:relative;
+  }
+  
+  .ring{
+    width:30px;
+    height:90px;
+    border:1px solid red;
+    border-color:#ccc;
+    position:absolute;
+    border-radius:50%;
+    animation:rt 2s infinite;
+    animation-timing-function: ease;
+  }
+  .ring1{
+    transform:rotate(45deg);
+  }
+  .ring2{
+    transform:rotate(90deg)
+  }
+  .ring3{
+    transform:rotate(135deg)
+  }
+  .center{
+    width:15px;
+    height:15px;
+    background-color:rgb(21, 151, 255);;
+    border-radius:50%;
+  }
+  
+  .test{
+    height:70px;
+    width:70px;
+    border:1px solid;
+    margin-left:44px;
+    margin-top:44px;
+    position:relative;
+    animation: rt 3s infinite;
+    animation-timing-function: linear;
+    border-radius:50%;
+    transform:rotate(45deg);
+  }
+  .dot{
+    position:absolute;
+    top:12px;
+    left:0;
+    height:8px;
+    width:8px;
+    background-color:green;
+    border-radius:50%;
+  }
+  .dot1{
+    background-color:green;
+    
+    bottom:0;
+    left:0;
+    
+    
+  }
+  .dot2{
+    background-color:yellow;
+    right:15px;
+    top:45px;
+  }
+  .dot3{
+    background-color:crimson;
+    left:15px;
+    top:45px;
+  }
+  
+  @keyframes rt{
+    0%{
+      transform:rotate(360deg);
+    }
+    
+  }

@@ -1,0 +1,12 @@
+:root {
+  --font-fam: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  --primary-color: #050505;
+}
+
+body {
+  margin: 0;
+  background-color: #f0f2f5;
+  box-sizing: content-box;
+  padding:0;
+  min-width: fit-content;
+}

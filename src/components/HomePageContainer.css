@@ -1,0 +1,17 @@
+.homepage-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-content,.right-content{
+    margin-top:12px;
+}
+.center-content{
+    margin: 0px 8px;
+}
+
+@media screen and (max-width:960px) {
+    .left-content,.right-content{
+        display: none;
+    }
+}

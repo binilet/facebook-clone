@@ -1,0 +1,38 @@
+
+.spinner{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:#1876f2;
+    animation-name:blip;
+    animation-duration: .3s;
+    transition: all ease-in-out;
+    animation-iteration-count: infinite;
+    box-shadow:30px 50px 30px rgb(0,0,0,.6)
+  }
+  
+  @keyframes blip {
+    from{
+      transform:scale(0);
+    }
+    to{
+      transform:scale(1);
+    }
+  }
+  
+  p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

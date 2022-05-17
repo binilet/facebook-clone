@@ -1,0 +1,227 @@
+.header {
+  height: 56px;
+  position: sticky;
+  top: 0;
+  color: #ccc;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 9999;
+}
+.left-header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+.input-container {
+  background-color: #f2f5f0;
+  height: 40px;
+  padding-left: 7px;
+  color: var(--primary-color);
+  margin-left: 12px;
+  border-radius: 9999px;
+  display: flex;
+  transition: all 1s ease-out;
+}
+.fa-search {
+  color: #65676b;
+}
+.search-facebook-input-field {
+  outline: none;
+  border: none;
+  height: 40px;
+  background-color: inherit;
+  box-sizing: border-box;
+  padding-bottom: 9px;
+  padding-top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 0.9375rem;
+}
+.logo-container {
+  height: 40px;
+  width: 40px;
+}
+.logo-container img {
+  height: 100%;
+}
+.center-header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 2;
+  padding: 0 110px;
+}
+.main-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.main-menu-list-item {
+  box-sizing: border-box;
+  cursor: pointer;
+  fill: #65676b;
+  /*border-bottom:2px solid #1B74E4;*/
+
+  height: 100%;
+  transition: all 2s ease-in;
+}
+.menu-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.menu-item {
+  padding: 4px 24px;
+  border-radius: 5px;
+}
+.menu-item:hover {
+  background-color: #f2f5f0;
+}
+.hamburger-menu {
+  color: #65676b;
+  margin-right: 12px;
+  font-size: 1.25rem;
+  display: none;
+}
+.right-header-wrapper {
+  display: flex;
+  align-items: center;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  flex: 1;
+}
+.right-header-container {
+  display: flex;
+  padding-right: 16px;
+  padding-left: 4px;
+  height: 100%;
+  align-items: center;
+}
+.right-header-menu {
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.right-header-menu .right-svgs {
+  height: 20px;
+  width: 20px;
+}
+.right-header-menu:hover {
+  background-color: #ccc;
+}
+.header-user {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 4px 5px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.header-user .profile-img-header {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.profile-img-header img {
+  height: 100%;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+.header-user:hover {
+  background-color: #e4e6eb;
+  border-radius: 9999px;
+}
+.user_name {
+  color: #050505;
+  font-size: 15px;
+  font-family: var(--font-fam);
+}
+.input-container-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1370px) {
+  .search-facebook-input-field {
+    /* display: none; */
+  }
+  /* .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 40px;
+    transition: all .3s ease-out;
+    padding: 0px;
+  } */
+}
+@media screen and (max-width: 960px) {
+  .center-header {
+    padding: 0 55px;
+  }
+  .menu-item {
+    padding: 4px 12px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .menu-item {
+    padding: 4px 8px;
+  }
+  .search-facebook-input-field {
+     display: none; 
+  }
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 40px;
+    transition: all .3s ease-out;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .collapsible {
+    display: none;
+    transition: all 2s ease-out;
+  }
+  .hamburger-menu {
+    display: inline;
+    align-self: flex-start;
+  }
+  .main-menu {
+    justify-content: flex-start;
+  }
+  .center-header {
+    padding: 0;
+  }
+  .user_name {
+    display: none;
+  }
+}

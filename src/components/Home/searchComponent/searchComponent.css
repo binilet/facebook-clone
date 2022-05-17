@@ -1,0 +1,73 @@
+.input-container {
+    background-color: #f2f5f0;
+    height: 40px;
+    padding-left: 7px;
+    color: var(--primary-color);
+    margin-left: 12px;
+    border-radius: 9999px;
+    display: flex;
+    transition: all 1s ease-out;
+    position:relative;
+  }
+
+  .input-container-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .fa-search {
+    color: #65676b;
+  }
+
+  .search-facebook-input-field {
+    outline: none;
+    border: none;
+    height: 40px;
+    background-color: inherit;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 0.9375rem;
+  }
+
+  .srch-drop-down_container{
+      position: absolute;
+      left:0;
+      top:40px;
+      background-color: #fff;
+      box-shadow: 3px 3px 2px rgb(0,0,0,0.2);
+      width:100%;
+      padding-top:12px;
+      border-radius:5px;
+  }
+
+  .srch-result-container{
+      display: flex;
+      padding:8px;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+  }
+  .srch-result-container:hover{
+      cursor:pointer;
+      opacity: 0.9;
+      background-color: beige;
+  }
+  .srch-result-pic{
+      width:45px;
+      height:45px;
+      margin-right: 12px;
+  }
+  .srch-result-pic img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      border-radius: 50%;
+  }
+  .srch-result-name span{
+      letter-spacing: 1px;
+      font-size:13px;
+      font-weight: bold;
+  }
